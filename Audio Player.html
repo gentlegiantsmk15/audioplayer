@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+audio{
+ position:fixed;
+ width:100%;
+ bottom:0px;
+}
+</style>
+<meta name="viewport" content="width=device-width">
+<title>Audio Player</title>
+</head>
+<body>
+<h1>Enter the URL:</h1>
+<input type="url" id="URL">
+&nbsp
+<button onClick="Action();">Play</button>
+<div>
+<audio id="Audio" controls>
+</audio>
+</div>
+<script>
+function Action(){
+var Value = document.getElementById("URL").value;
+document.getElementById("Audio").src=Value;
+document.getElementById("Audio").play();
+}
+</script>
+</body>
+</html>
